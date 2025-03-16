@@ -1,0 +1,211 @@
+
+/* PC・スマホ共通スタイル */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 追加 */
+  }  
+  
+  body {
+    font-family: "Noto Sans Japanese", Meiryo, Arial, sans-serif;
+    overflow-x: hidden; /* 追加 */
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  /*=============
+  PC用スタイル
+  =============*/
+  
+  /* ヘッダー */
+  header {
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #myprofile {
+    font-size: 34px;
+    text-align: left;
+    border: solid 1px #000000 ;
+    display: inline-block;
+    padding: 15px 35px;
+  }
+  
+  #nav-pc {
+    font-size: 34px;
+    font-weight: bold;
+  }
+  
+  #nav-pc > a:first-child {
+    margin-right: 30px;
+  }
+  
+  #nav-pc > a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  #nav-pc > a:link {
+    color: #000000;
+  }
+  
+  #nac-pc > a:visited {
+    color: #000000;
+  }
+  
+  #nav-pc > a:active {
+    color: #000000;
+    text-decoration: underline;
+  }
+  
+  #nav-pc > a:hover {
+    color: #000000;
+  }
+  
+  /* メイン */
+  #main-visual {
+    width: 100%;
+  }
+  
+  #main-visual > img {
+    width: 100%;
+  }
+  
+  /* 共通 */
+  .box {
+    margin: 60px auto 0;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+  }
+  
+  /* About */
+  #about {
+    width: 700px;
+  }
+  
+  .aboutbox > img {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .aboutbox {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .aboutbox ul {
+    list-style: inside;
+  }
+  
+  /* Works */
+  .worksbox {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  
+  .worksbox > div {
+    width: 32%;
+  }
+  
+  .worksbox div > img {
+    width: 100%;
+    
+  }
+  
+  
+  /* footer */
+  footer {
+    text-align: center;
+    margin: 100px auto 50px auto;
+  }
+  
+  /*=============
+  SP用スタイル
+  =============*/
+  
+  @media screen and (max-width: 767px) {
+
+    /* ヘッダー */
+    header {
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      padding: 10px; /* 必要に応じて追加 */
+    }
+    
+    /* メインビジュアル */
+    #main-visual {
+      width: 100%;
+    }
+    
+    #myprofile {
+      font-size: 20px;
+      padding: 10px 20px;
+    }
+    
+    #nav-pc {
+      font-size: 20px;
+      display: flex; /* 必要に応じて追加 */
+      flex-wrap: wrap; /* 必要に応じて追加 */
+    }
+    
+    #nav-pc > a:first-child {
+      margin-right: 10px;
+    }
+    
+    /* ABOUT */
+    #about {
+      width: 90%;
+    }
+    
+    #about img {
+      width: 100%;
+    }
+    
+  .aboutbox{
+    display: block;
+
+  }
+      
+    .aboutbox > div {
+      width: 100%;
+    }
+    
+    /* WORKS */
+    .worksbox {
+      width: 90%;
+      flex-wrap: wrap;
+    }
+    
+    .worksbox div {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    
+    .worksbox div > img {
+      margin-bottom: 10px;
+    }
+    
+    }    
